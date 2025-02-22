@@ -16,15 +16,31 @@
     ?>
     <br>
     <?php
-    if(mt_rand(0,1)){
-        ?>
-        <div style="color: red">Red</div>
-        <?php
-    } else {
-        ?>
-        <div style="color: blue">Blue</div>
-        <?php
-    }
+        echo 'Main <br>';
+        // Include - попередження
+        include 'second.php';
+        // Require - не буде працювати 
+        require 'second.php';
+        echo 'Main <br>'; 
+    ?>
+
+    <?php 
+        // Змінні
+        // Не може починатися на число і може мати "_"
+        // Задаємо змінну знаком "$"
+        // Чутливі до регістру А != а
+        $a_a = 5;
+        $b_b = 3;
+        $a = $b = $c = 4;
+
+        $A = 1;
+        $B = 1.1;
+        $C = true;
+        $D = 'abcd 434 4.2 true';
+        $E;
+
+        echo $a_a + $b_b;
+        echo $a + $b * $c;
     ?>
 </body>
 </html>
