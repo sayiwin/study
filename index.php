@@ -11,6 +11,7 @@
     ?>
     <?php
         echo 5+3+2;
+        echo 2+2+2;
     ?>
 </body>
 </html>
